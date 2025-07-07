@@ -29,16 +29,14 @@ This personal lab environment was designed to simulate enterprise-style networki
 ```
 [Internet via Wi-Fi]
          |
-      [Laptop]
+      [E3000]
          |
-     ┌────────┐
-     │ USB-C  │
-     │ Dock   │───> [Switch] ─> [RPi3] ─ Infra + SSD
-     └────────┘             └> [RPi4] ─ Defender
+      [Kali-VM] ───> [Switch] ─> [RPi3] ─ Infra + SSD
+                           └> [RPi4] ─ Defender
                              └> [RPi4] ─ SIEM
-                             └> [RPi5] ─ Kali Offensive ─> Victim 1
-                                                         └> Victim 2
-                                                         └> Victim 3
+                             └> [RPi5] ─ Pivot ─> Victim 1
+                                                      └> Victim 2
+                                                               └> Victim 3
 ```
 
 ---
