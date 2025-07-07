@@ -1,0 +1,26 @@
+# Configuration Files
+
+This directory contains system and service configuration files used to set up and manage each node in the Raspberry Pi Cybersecurity Lab.
+
+---
+
+##  File Descriptions
+
+- **infra.conf**  
+  Static IP settings for the Infra node, Pi-hole DNS configuration, and remote syslog forwarding.
+
+- **defender.conf**  
+  UFW firewall rules and Snort startup configuration for the Defender node.
+
+- **siem.conf**  
+  Splunk monitoring configuration, including syslog UDP listener setup and log indexing rules.
+
+- **pivot.md**  
+  Documentation on pivot node setup for lateral movement testing, including routing, IP forwarding, and installed red team tools.
+
+- **victims.md**  
+  Summary of common misconfigurations and vulnerabilities simulated on the victim machines for testing attack chains.
+
+---
+
+These configuration files are essential for replicating the lab environment, ensuring each node functions in its intended offensive or defensive role.
